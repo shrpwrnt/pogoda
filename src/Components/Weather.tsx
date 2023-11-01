@@ -24,12 +24,7 @@ const Weather = () => {
           }&units=metric`
         )
         .then(response => {
-          // if (response.data?.coord) {
-          //   mapRef.current.panTo(response.data.coord);
-          // }
           setWeather(response.data)
-          // setViewport(response.data.coord);
-          // console.log(viewport);
         })
         .catch(error => console.error(error))
     }
